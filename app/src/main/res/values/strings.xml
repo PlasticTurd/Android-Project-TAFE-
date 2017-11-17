@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">test 2</string>
+    <string name="edit_value">Enter a number</string>
+    <string name="button_send">Send.</string>
+</resources>
