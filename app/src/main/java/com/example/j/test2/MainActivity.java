@@ -18,10 +18,15 @@ public class MainActivity extends AppCompatActivity {
 
         EditText inputWidthClone = (EditText) findViewById(R.id.inputWidth);
         EditText inputHeightClone = (EditText) findViewById(R.id.inputHeight);
+        EditText outputAreaClone = (EditText) findViewById(R.id.outputArea);
+        EditText outputPerimeterClone = (EditText) findViewById(R.id.outputPerimeter);
         double dubWidth = Double.parseDouble(inputWidthClone.getText().toString());
         double dubHeight = Double.parseDouble(inputHeightClone.getText().toString());
         double dubArea = dubWidth * dubHeight;
         double dubPerimeter = (dubWidth * 2) + (dubHeight * 2);
-
+        String stringArea = Double.toString(dubArea);
+        String stringPerimeter = Double.toString(dubPerimeter);
+        outputAreaClone.setText(stringArea);
+        outputPerimeterClone.setText(stringPerimeter);
     }
 }
